@@ -6,3 +6,29 @@ An engineer might immediately think "easy-peasy, I'll just use Morse code!"
 reasonably get across with a single pixel; how might you communicate urgency? Or compassion? */
 
 //"Your homework assignment is overdue." 
+
+/*convey a sense of urgency by the following: denote the CLASS NUMBER for which the homework is due
+and the fact that you need to turn it in ASAP!
+*/
+
+//an example array of course numbers you might be taking
+int[] courseNumbers = [23, 190, 188];
+
+void setup() {
+  // declare the ledPin as an OUTPUT:
+  pinMode(ledPin, OUTPUT);
+}
+
+void loop() {
+  // read the value from the sensor:
+  sensorValue = analogRead(sensorPin);
+  // turn the ledPin on
+  digitalWrite(ledPin, HIGH);
+  // stop the program for <sensorValue> milliseconds:
+  delay(rand(courseNumbers));
+  // turn the ledPin off:
+  digitalWrite(ledPin, LOW);
+  // stop the program for for <sensorValue> milliseconds
+  delay(100);
+  }
+}
